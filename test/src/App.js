@@ -28,6 +28,16 @@ class TOC extends Component{//목차
 		);
 	}
 }
+class Content extends Component{
+	render(){
+		return(
+			<article>
+				<h2>HTML</h2>
+				HTML배우기~
+			</article>
+		);
+	}
+}
 class App extends Component {
  render(){
   return (
@@ -35,6 +45,7 @@ class App extends Component {
     <div className="App">
     	<Subject></Subject>
 		<TOC></TOC>
+		<Content></Content>
     </div>
   );
  }
