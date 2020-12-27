@@ -31,8 +31,8 @@ class Content extends Component{
 	render(){
 		return(
 			<article>
-				<h2>HTML</h2>
-				HTML배우기~
+				<h2>{this.props.title}</h2>
+				{this.props.desc}
 			</article>
 		);
 	}
@@ -45,7 +45,7 @@ class App extends Component {
     	<Subject title="WEB" sub="world wide web!"></Subject>
 		  <Subject title="React" sub="for UI"></Subject>
 		<TOC></TOC>
-		<Content></Content>
+		<Content title="props써보기" desc="짜잔"></Content>
     </div>
   );
  }
