@@ -13,3 +13,6 @@ class TOC extends Component{//목차
 		);
 	}
 }
+
+//export default로 데이터를 내보냄.
+export default TOC;
