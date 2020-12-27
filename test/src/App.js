@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TOC from "./components/TOC";
 import './App.css';
 
 //Component(class)명은 대문자로 시작.
@@ -11,19 +12,6 @@ class Subject extends Component{//제목
 				<h1>{this.props.title}</h1>
 				{this.props.sub}
 			</header>
-		);
-	}
-}
-class TOC extends Component{//목차
-	render(){
-		return(
-			<nav>		
-				<ul>
-					<li><a href="1.html">HTML</a></li>
-					<li><a href="2.html">CSS</a></li>
-					<li><a href="3.html">JavaScript</a></li>
-				</ul>
-			</nav>
 		);
 	}
 }
