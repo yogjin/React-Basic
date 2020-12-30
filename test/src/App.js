@@ -5,6 +5,11 @@ import Content from "./components/Content"
 import './App.css';
 
 class App extends Component {
+	//어떤 Component가 실행될때 render()보다 먼저 실행되면서
+	//그 Component를 초기화 시켜주고싶은 코드는 이 constructor안에 작성한다.
+	constructor(props){
+		super(props);
+	}
 	render(){
 		return (
 			//->최상위태그 div
