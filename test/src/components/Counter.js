@@ -17,10 +17,12 @@ class Counter extends Component{
 							return {
 								number : prevState.number+1
 							}
+						},
+						//callback함수로 this.setState가 끝난 후 특정 작업 실행하기.
+						()=>{
+							console.log('방금 setState가 호출되었다');
+							console.log(this.state);
 						});
-						this.setState((prevState)=>({
-							number : prevState.number+1
-						}));
 					}}
 				>
 				+1하기
