@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Counter from "./components/Counter"
+import Say from './components/Say';
 import './App.css';
 
 class App extends Component {
-	render(){
-		return <Counter></Counter>;
+	render() {
+    return <Say/>;
 	}
 }
 export default App;
