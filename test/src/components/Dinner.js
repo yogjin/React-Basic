@@ -13,9 +13,29 @@ const Dinner = () => {
   let doTime = ndt-sdt;
   
   return(
-    <div>
-      <h1>전역일 계산기</h1>
-      <progress value={(doTime/fullTime)*100} max='100'></progress>
+    // <div>
+    //   <h1>전역일 계산기</h1>
+    //   <progress value={(doTime/fullTime)*100} max='100'></progress>
+    // </div>
+    <div className='container'>
+      <div className='top'>
+        <div className='user-photo'></div>
+        <div className='user-info'></div>
+      </div>
+      <div className='mid'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className='bottom'>
+        <p>전체복무일</p><p></p>
+        <div></div>{/*줄*/}
+        <p>현재복무일</p><p></p>
+        <div></div>{/*줄*/}
+        <p>남은복무일</p><p></p>
+        <div></div>{/*줄*/}
+        <p>다음복무일</p><p></p>
+      </div>
     </div>
   );
 };
