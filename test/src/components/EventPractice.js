@@ -22,6 +22,15 @@ class EventPractice extends Component {
             }
           }
           ></input>
+        {/*버튼을 누를때 state(message) 출력후 초기화*/}
+        <button onClick={
+            ()=>{
+              alert(this.state.message);
+              this.setState({
+                message:''
+              });
+            }
+          }>확인</button>
       </div>
     );
   }
